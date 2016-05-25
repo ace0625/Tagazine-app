@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/main_background" >
+
+        <LinearLayout
+            android:id="@+id/magazine_detail_top_layout"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="#000000"
+            android:visibility="invisible" >
+
+            <Button
+                android:id="@+id/btn_magazine_detail_home"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/bt_mag_delete" />
+
+            <TextView
+                android:id="@+id/tv_menu_beforlogin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <Button
+                android:id="@+id/btn_magazine_detail_category"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:background="@drawable/bt_mag_category" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/magazine_detail_bottom_layout"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_gravity="bottom"
+            android:background="#000000"
+            android:visibility="invisible" >
+
+            <LinearLayout
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/tv_magazine_detail_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="TextView" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp" >
+
+                    <ImageView
+                        android:id="@+id/hotstreetfashion_itemimg"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/bt_like_on" />
+
+                    <TextView
+                        android:id="@+id/tv_magazine_detail_count_tv"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="TextView" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_magazine_detail_page"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="25dp"
+                android:text="TextView" />
+
+            <Button
+                android:id="@+id/btn_magazine_detail_info"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="25dp"
+                android:text="detail" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/magazine_detail_img"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_launcher" />
+
+    </FrameLayout>
+
+</LinearLayout>

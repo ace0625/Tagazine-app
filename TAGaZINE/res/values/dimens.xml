@@ -1,0 +1,20 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="menu_layout_horizontal_margin">300dp</dimen> <!--사이드메뉴 가로길이 -->
+	<dimen name="menu_user_horizontal_margin">300dp</dimen> <!-- 사이드메뉴 유저 가로길이 -->
+	<dimen name="menu_user_vertical_margin">125dp</dimen>	<!--  사이드메뉴 유저 세로길이 -->
+	<dimen name="menu_sectiotitle_horizontal_margin">300dp</dimen> <!-- 사이드메뉴 섹선 타이틀 가로 -->
+	<dimen name="menu_sectiotitle_vertical_margin">300dp</dimen> <!-- 사이드메뉴 섹선 타이틀 세로 -->
+	<dimen name="menu_sectiontitle_font_size">19sp</dimen>
+	<dimen name="menu_sectiontitle_font_margin">25dp</dimen>	<!-- 사이드메뉴 섹선 타이틀 폰트 마진 -->
+	<dimen name="menu_subtitle_horizontal_margin">300dp</dimen> <!-- 사이드메뉴 서브타이틀 가로 -->
+	<dimen name="menu_subtitle_vertical_margin">45dp</dimen>	<!-- 사이드메뉴 서브타이틀 세로 -->
+	<dimen name="menu_subtitle_font_margin">35dp</dimen> 	<!-- 사이드메뉴 서브타이틀 폰트 마진 -->
+	<dimen name="menu_subtitle_font_size">20sp</dimen>
+	
+	    <dimen name="main_stylefeed_margin">10dp</dimen>
+	    <dimen name="comment_listview">120dp</dimen>
+</resources>

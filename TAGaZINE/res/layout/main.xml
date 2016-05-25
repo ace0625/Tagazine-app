@@ -1,0 +1,178 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Main_Activity" >
+
+    <com.styletag.tagazine.views.SlidingView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/MainViewSlide"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/Main_menulayout"
+            android:layout_width="305dp"
+            android:layout_height="match_parent"
+            android:background="#ffffff"
+            android:orientation="vertical" >
+
+            <ListView
+                android:id="@+id/Menu_listview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scrollbars="none" >
+            </ListView>
+        </LinearLayout>
+
+        <FrameLayout
+            android:id="@+id/Main_feedlayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/main_background" >
+
+            <FrameLayout
+                android:id="@+id/Main_imgFeedLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="86dp" >
+
+                <LinearLayout
+                    android:id="@+id/slidelayout"
+                  	android:layout_width="match_parent"
+               	 	android:layout_height="match_parent"
+                	android:background="@android:color/transparent" 
+                    android:orientation="vertical" >
+
+                </LinearLayout>
+
+            </FrameLayout>
+            
+             <FrameLayout
+                android:id="@+id/Main_top"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical" >
+
+                        <LinearLayout
+                            android:id="@+id/Main_TopBar"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="top"
+                            android:orientation="horizontal" >
+
+                            <Button
+                                android:id="@+id/btnSlide"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:background="@drawable/bt_main_navibar_menu_onff" />
+
+                            <Button
+                                android:id="@+id/btnmaintitle"
+                                style="?android:attr/buttonStyleSmall"
+                                android:layout_width="wrap_content"
+                                android:layout_height="55dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/main_navibar_02"
+                                android:clickable="false" />
+
+                            <Button
+                                android:id="@+id/btnSearch"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:background="@drawable/bt_main_navibar_search_onoff" />
+
+                            <Button
+                                android:id="@+id/btnCamera"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:background="@drawable/bt_main_navibar_camera_onoff" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/Main_switchbar"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" >
+
+                            <Button
+                                android:id="@+id/btnStyleFeed"
+                                style="?android:attr/buttonStyleSmall"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:background="@drawable/bt_tabbar_01_onoff" />
+
+                            <Button
+                                android:id="@+id/btnMagazine"
+                                style="?android:attr/buttonStyleSmall"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:background="@drawable/bt_tabbar_02_onoff" />
+                        </LinearLayout>
+
+                        <FrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="5dp" >
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content" >
+
+                                <TextView
+                                    android:id="@+id/Feedtabonoff"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:background="@drawable/main_tabbar_on" />
+
+                                <TextView
+                                    android:id="@+id/Magazinetabonoff"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:background="@drawable/main_tabbar_off" />
+                            </LinearLayout>
+                        </FrameLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/CameraCallLayout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:layout_marginTop="37dp"
+                        android:layout_weight="0"
+                        android:orientation="vertical"
+                        android:visibility="visible" >
+
+                    </LinearLayout>
+                </FrameLayout>
+            </FrameLayout>
+
+             <FrameLayout
+                 android:id="@+id/Main_notablayout"
+                 android:layout_width="match_parent"
+                 android:layout_height="match_parent"
+                 android:layout_marginTop="54dp" >
+
+             </FrameLayout>
+
+        </FrameLayout>
+    </com.styletag.tagazine.views.SlidingView>
+
+</LinearLayout>

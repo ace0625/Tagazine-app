@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_background"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:id="@+id/main_stylefeed_detail_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+          <ScrollView
+            android:id="@+id/detail_scrollview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="300dp"
+                    android:layout_height="250dp"
+                    android:layout_gravity="center" >
+
+                    <ImageView
+                        android:id="@+id/img_mainStylefeed_detail"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/bt_main_navibar_04_camera_on" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/detail_tagButton_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <GridView
+                        android:id="@+id/detail_tag_gridview"
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        
+                        android:numColumns="3" >
+                    </GridView>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linear333"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#ffffff"
+                    android:orientation="vertical" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" >
+
+                        <com.facebook.widget.ProfilePictureView
+                            android:id="@+id/friendProfilePicture_detail"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:layout_gravity="center_horizontal"
+                            android:padding="5sp" >
+                        </com.facebook.widget.ProfilePictureView>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical" >
+
+                            <TextView
+                                android:id="@+id/detail_userName"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="User Name"
+                                android:textColor="#000000" />
+
+                            <TextView
+                                android:id="@+id/detail_date"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="2013.11.12"
+                                android:textColor="#000000" />
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/main_background" >
+
+                        <TextView
+                            android:id="@+id/detail_styleTip_tv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="styletip"
+                            android:textColor="#000000" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/headerlayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" >
+
+                        <FrameLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1" >
+
+                            <Button
+                                android:id="@+id/detail_btn_like1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/bt_detail_like_onoff" />
+
+                            <TextView
+                                android:id="@+id/detail_likecount_tv"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical|center"
+                                android:layout_marginLeft="12dp"
+                                android:text="cnt"
+                                android:textAppearance="?android:attr/textAppearanceSmall"
+                                android:textColor="#000000" />
+
+                        </FrameLayout>
+
+                        <FrameLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1" >
+
+                            <Button
+                                android:id="@+id/detail_btn_view"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/bt_detail_view" />
+
+                            <TextView
+                                android:id="@+id/detail_viewcount_tv"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical|center"
+                                android:layout_marginLeft="12dp"
+                                android:text="cnt"
+                                android:textAppearance="?android:attr/textAppearanceSmall"
+                                android:textColor="#000000" />
+
+                        </FrameLayout>
+
+                        <FrameLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1" >
+
+                            <Button
+                                android:id="@+id/detail_btn_comment1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/bt_detail_comment_onoff" />
+
+                            <TextView
+                                android:id="@+id/detail_comment"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical|center"
+                                android:layout_marginLeft="13dp"
+                                android:text="Comment"
+                                android:textAppearance="?android:attr/textAppearanceSmall"
+                                android:textColor="#000000" />
+
+                        </FrameLayout>
+                    </LinearLayout>
+
+                      <LinearLayout
+                        android:id="@+id/LinearLayout1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:id="@+id/detail_detail_brand_tv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Comment" />
+
+                        <ListView
+                            android:id="@+id/detail_comment_listview"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1" >
+                        </ListView>
+                    </LinearLayout> 
+                </LinearLayout>
+            </LinearLayout>
+          </ScrollView>
+
+         <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+              android:layout_gravity="bottom" >
+
+            <LinearLayout
+                android:id="@+id/LinearLayout1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_comments" >
+
+                <Button
+                    android:id="@+id/detail_btn_like2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bt_comments_like_it_onoff" />
+
+                <EditText
+                    android:id="@+id/et_detail_comment"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:hint="Add a comment" >
+
+                </EditText>
+
+                <Button
+                    android:id="@+id/btn_detail_write"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/bt_write_onoff" />
+            </LinearLayout>
+        </RelativeLayout>
+
+    </FrameLayout>
+
+</LinearLayout>

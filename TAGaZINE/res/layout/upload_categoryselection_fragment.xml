@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_background"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp" >
+
+        <ImageView
+            android:id="@+id/detail_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icon_mini_tag" />
+
+        <TextView
+            android:id="@+id/tv_menu_beforlogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Style Look" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:orientation="vertical" >
+
+        <Button
+            android:id="@+id/btn_upload_cateory_dailyLook"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bt_write_category_onoff"
+            android:gravity="left|center"
+            android:text="     Daily Look"
+            android:textColor="#7f7f7f"
+            android:textSize="17dp" />
+
+        <Button
+            android:id="@+id/btn_upload_cateory_modernLook"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bt_write_category_onoff"
+             android:gravity="left|center"
+            android:text="     Modern Look"
+            android:textColor="#7f7f7f"
+            android:textSize="17dp"
+            />
+
+        <Button
+            android:id="@+id/btn_upload_cateory_vintageLook"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+             android:gravity="left|center"
+         
+               android:background="@drawable/bt_write_category_onoff"
+               android:textColor="#7f7f7f"
+            android:textSize="17dp"
+            android:text="     Vintage Look" />
+
+        <Button
+            android:id="@+id/btn_upload_cateory_uniqueLook"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+             android:gravity="left|center"
+       
+            android:textColor="#7f7f7f"
+            android:textSize="17dp"
+               android:background="@drawable/bt_write_category_onoff"
+            android:text="     Unique Look" />
+           <Button
+            android:id="@+id/btn_upload_cateory_chicLook"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+             android:gravity="left|center"
+             android:textColor="#7f7f7f"
+            android:textSize="17dp"
+        
+               android:background="@drawable/bt_write_category_onoff"
+            android:text="     Chic Look" />
+         <Button
+            android:id="@+id/btn_upload_cateory_celebLook"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+             android:gravity="left|center"
+             android:textColor="#7f7f7f"
+            android:textSize="17dp"
+       
+               android:background="@drawable/bt_write_category_onoff"
+            android:text="     Celeb Look" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp" >
+
+          <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icon_mini_tag" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Style Tip" />
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/et_upload_styletip"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/img_write_contents"
+        android:ems="10"
+        android:inputType="textMultiLine" >
+
+        <requestFocus />
+    </EditText>
+
+</LinearLayout>

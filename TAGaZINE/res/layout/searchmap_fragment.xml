@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00000000"
+    android:orientation="vertical" >
+
+     <LinearLayout
+        android:id="@+id/upload_dialog_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top" >
+
+        <Button
+            android:id="@+id/btn_map_back"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/bt_map_navibar_onoff" />
+
+        <AutoCompleteTextView
+            android:id="@+id/mapSearch_et"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dp"
+            android:layout_weight="1"
+            android:background="@drawable/bt_map_navibar_02_search"
+            android:completionThreshold="1"
+            android:ems="10"
+            android:hint="          Search..."
+            android:imeOptions="actionSend"
+            android:text="          " />
+
+    </LinearLayout>
+
+     <FrameLayout
+         android:layout_width="match_parent"
+         android:layout_height="match_parent" >
+        
+          <com.skp.Tmap.TMapView
+            android:id="@+id/tMap"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="tmap" />
+
+     </FrameLayout>
+
+</LinearLayout>

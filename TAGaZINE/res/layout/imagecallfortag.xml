@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/Upload_full_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/upload_dialog_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <Button
+                android:id="@+id/btn_upload_home"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/bt_navibar_writing_home_onoff" />
+
+            <ImageView
+                android:id="@+id/detail_bar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/bt_navibar_writing_02_logo" />
+
+            <Button
+                android:id="@+id/btn_upload_finalok"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/bt_navibar_writing_ok_onoff" />
+        </LinearLayout>
+
+        <FrameLayout
+            android:id="@+id/upload_sublayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/main_background" >
+
+            <ImageView
+                android:id="@+id/tagimage"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/ic_launcher" />
+
+            <com.styletag.tagazine.views.UploadTagView
+                android:id="@+id/uploadTagView1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </FrameLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

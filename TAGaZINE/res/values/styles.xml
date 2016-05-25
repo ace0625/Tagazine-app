@@ -1,0 +1,30 @@
+<resources>
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+    <color name="main_background">#f6f6f3</color>
+    <color name="menu_subbackgroundcolor">#7c1962</color>
+    <color name="menu_titlebackgroundcolor">#e8e8e8</color>
+	<color name="menu_titlefontcolor">#360230</color>
+	<color name="menu_subfontcolor">#ffffff</color>
+	<color name="search_background">#191919</color>
+	
+	 <declare-styleable name="StaggeredGridView">
+        <attr name="drawSelectorOnTop" format="boolean" />
+        <attr name="numColumns" format="integer" />
+    </declare-styleable>
+</resources>
